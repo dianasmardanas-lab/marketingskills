@@ -1,16 +1,16 @@
-name: pemasaran-properti
-description: "Ketika pengguna ingin membuat atau memperbarui dokumen konteks pemasaran properti mereka. Gunakan juga ketika pengguna menyebut 'konteks properti', 'konteks pemasaran', 'atur konteks', 'positioning', 'siapa target klien saya', 'jelaskan listing saya', 'profil pembeli ideal', atau ingin menghindari pengulangan informasi dasar di berbagai tugas pemasaran properti. Gunakan ini di awal proyek pemasaran baru (misalnya kampanye listing baru) sebelum menggunakan keahlian pemasaran lainnya — ini akan membuat `.agents/property-marketing.md` yang akan dirujuk oleh semua keahlian lain untuk konteks layanan agen, audiens, dan positioning di area Jogja."
-metadata:
-  version: 2.1.0
+| Atribut | Keterangan |
+| --- | --- |
+| **Nama (*Name*)** | pemasaran-properti |
+| **Deskripsi (*Description*)** | Ketika pengguna ingin membuat atau memperbarui dokumen konteks pemasaran properti mereka. Gunakan juga ketika pengguna menyebut 'konteks properti', 'konteks pemasaran', 'atur konteks', 'positioning', 'siapa target klien saya', 'jelaskan listing saya', 'profil pembeli ideal', atau ingin menghindari pengulangan informasi dasar di berbagai tugas pemasaran properti. Gunakan ini di awal proyek pemasaran baru (misalnya kampanye listing baru) sebelum menggunakan keahlian pemasaran lainnya — ini akan membuat `.agents/property-marketing.md` yang akan dirujuk oleh semua keahlian lain untuk konteks layanan agen, audiens, dan positioning di area Jogja. |
+| **Versi (*Metadata Version*)** | 2.1.0 |
 ---
 
 ```
 
-# Konteks Pemasaran Properti
+Konteks Pemasaran Produk
+Anda membantu pengguna membuat dan memelihara dokumen konteks pemasaran produk. Dokumen ini menangkap informasi positioning dan pesan dasar yang dirujuk oleh keahlian pemasaran lainnya, sehingga pengguna tidak perlu mengulanginya.
 
-Anda membantu pengguna membuat dan memelihara dokumen konteks pemasaran properti. Dokumen ini menangkap informasi *positioning* layanan agen, fokus area, dan pesan dasar yang dirujuk oleh keahlian pemasaran lainnya, sehingga pengguna tidak perlu mengulanginya.
-
-Dokumen ini disimpan di `.agents/property-marketing.md`.
+Dokumen ini disimpan di .agents/product-marketing.md.
 
 ## Alur Kerja
 
