@@ -1,255 +1,264 @@
----
-name: product-marketing
-description: "When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'marketing context,' 'set up context,' 'positioning,' 'who is my target audience,' 'describe my product,' 'ICP,' 'ideal customer profile,' or wants to avoid repeating foundational information across marketing tasks. Use this at the start of any new project before using other marketing skills — it creates `.agents/product-marketing.md` that all other skills reference for product, audience, and positioning context."
+name: pemasaran-properti
+description: "Ketika pengguna ingin membuat atau memperbarui dokumen konteks pemasaran properti mereka. Gunakan juga ketika pengguna menyebut 'konteks properti', 'konteks pemasaran', 'atur konteks', 'positioning', 'siapa target klien saya', 'jelaskan listing saya', 'profil pembeli ideal', atau ingin menghindari pengulangan informasi dasar di berbagai tugas pemasaran properti. Gunakan ini di awal proyek pemasaran baru (misalnya kampanye listing baru) sebelum menggunakan keahlian pemasaran lainnya — ini akan membuat `.agents/property-marketing.md` yang akan dirujuk oleh semua keahlian lain untuk konteks layanan agen, audiens, dan positioning di area Jogja."
 metadata:
   version: 2.1.0
 ---
 
-# Product Marketing Context
+```
 
-You help users create and maintain a product marketing context document. This captures foundational positioning and messaging information that other marketing skills reference, so users don't repeat themselves.
+# Konteks Pemasaran Properti
 
-The document is stored at `.agents/product-marketing.md`.
+Anda membantu pengguna membuat dan memelihara dokumen konteks pemasaran properti. Dokumen ini menangkap informasi *positioning* layanan agen, fokus area, dan pesan dasar yang dirujuk oleh keahlian pemasaran lainnya, sehingga pengguna tidak perlu mengulanginya.
 
-## Workflow
+Dokumen ini disimpan di `.agents/property-marketing.md`.
 
-### Step 1: Check for Existing Context
+## Alur Kerja
 
-First, check if `.agents/product-marketing.md` already exists. Also check `.claude/product-marketing.md` and the legacy filename `product-marketing-context.md` (in either `.agents/` or `.claude/`) for older setups — if found anywhere other than `.agents/product-marketing.md`, offer to move it to the canonical location.
+### Langkah 1: Periksa Konteks yang Ada
 
-**If it exists:**
-- Read it and summarize what's captured — note its current **Document version** and the last few **Changelog** entries so the user sees where the doc stands and what's changed recently
-- Ask which sections they want to update
-- Only gather info for those sections
-- On any substantive save, bump the version and add a changelog entry (see Step 4). This doc is the shared context every other marketing skill reads, so a dated paper trail of *what changed and why* is worth keeping.
+Pertama, periksa apakah `.agents/property-marketing.md` sudah ada. Periksa juga nama file lama `property-marketing-context.md` (jika ada) — jika ditemukan di tempat selain `.agents/property-marketing.md`, tawarkan untuk memindahkannya ke lokasi kanonikal.
 
-**If it doesn't exist, offer two options:**
+**Jika sudah ada:**
 
-1. **Auto-draft from codebase** (recommended): You'll study the repo—README, landing pages, marketing copy, package.json, etc.—and draft a V1 of the context document. The user then reviews, corrects, and fills gaps. This is faster than starting from scratch.
+* Baca dan rangkum apa yang telah dicatat — perhatikan **Versi dokumen** saat ini dan beberapa entri **Catatan perubahan** terakhir agar pengguna melihat status dokumen dan apa yang baru saja berubah.
+* Tanyakan bagian mana yang ingin mereka perbarui.
+* Kumpulkan informasi hanya untuk bagian tersebut.
+* Pada setiap penyimpanan yang substansial, naikkan versi dan tambahkan entri catatan perubahan (lihat Langkah 4).
 
-2. **Start from scratch**: Walk through each section conversationally, gathering info one section at a time.
+**Jika tidak ada, tawarkan dua opsi:**
 
-Most users prefer option 1. After presenting the draft, ask: "What needs correcting? What's missing?"
+**Opsi 1. Buat draf otomatis dari profil/listing** (disarankan): Anda akan mempelajari data yang tersedia—materi promosi, deskripsi listing IG/Tiktok, brosur, dll.—dan membuat draf V1 dari dokumen konteks. Pengguna kemudian meninjau, mengoreksi, dan mengisi kekurangannya.
 
-### Step 2: Gather Information
+**Opsi 2. Mulai dari nol**: Telusuri setiap bagian secara percakapan, kumpulkan informasi satu per satu.
 
-**If auto-drafting:**
-1. Read the codebase: README, landing pages, marketing copy, about pages, meta descriptions, package.json, any existing docs
-2. Draft all sections based on what you find
-3. Present the draft and ask what needs correcting or is missing
-4. Iterate until the user is satisfied
+Kebanyakan pengguna lebih memilih opsi 1. Setelah menyajikan draf, tanyakan: "Apa yang perlu dikoreksi? Apa yang kurang?"
 
-**If starting from scratch:**
-Walk through each section below conversationally, one at a time. Don't dump all questions at once.
+### Langkah 2: Kumpulkan Informasi
 
-For each section:
-1. Briefly explain what you're capturing
-2. Ask relevant questions
-3. Confirm accuracy
-4. Move to the next
+**Jika membuat draf otomatis:**
 
-Push for verbatim customer language — exact phrases are more valuable than polished descriptions because they reflect how customers actually think and speak, which makes copy more resonant.
+1. Baca sumber data: profil media sosial agen, deskripsi listing, brosur, atau dokumen pemasaran sebelumnya.
+2. Buat draf semua bagian berdasarkan apa yang Anda temukan.
+3. Sajikan draf dan tanyakan apa yang perlu dikoreksi atau apa yang kurang.
+4. Lakukan iterasi hingga pengguna puas.
 
----
+**Jika memulai dari nol:**
+Telusuri setiap bagian di bawah ini secara percakapan, satu per satu. Jangan memberikan semua pertanyaan sekaligus.
 
-## Sections to Capture
+Untuk setiap bagian:
 
-### 1. Product Overview
-- One-line description
-- What it does (2-3 sentences)
-- Product category (what "shelf" you sit on—how customers search for you)
-- Product type (SaaS, marketplace, e-commerce, service, etc.)
-- Business model and pricing
+1. Jelaskan secara singkat apa yang Anda catat.
+2. Ajukan pertanyaan yang relevan.
+3. Konfirmasi keakuratannya.
+4. Lanjut ke bagian berikutnya.
 
-### 2. Target Audience
-- Target company type (industry, size, stage)
-- Target decision-makers (roles, departments)
-- Primary use case (the main problem you solve)
-- Jobs to be done (2-3 things customers "hire" you for)
-- Specific use cases or scenarios
-
-### 3. Personas (B2B only)
-If multiple stakeholders are involved in buying, capture for each:
-- User, Champion, Decision Maker, Financial Buyer, Technical Influencer
-- What each cares about, their challenge, and the value you promise them
-
-### 4. Problems & Pain Points
-- Core challenge customers face before finding you
-- Why current solutions fall short
-- What it costs them (time, money, opportunities)
-- Emotional tension (stress, fear, doubt)
-
-### 5. Competitive Landscape
-- **Direct competitors**: Same solution, same problem (e.g., Calendly vs SavvyCal)
-- **Secondary competitors**: Different solution, same problem (e.g., Calendly vs Superhuman scheduling)
-- **Indirect competitors**: Conflicting approach (e.g., Calendly vs personal assistant)
-- How each falls short for customers
-
-### 6. Differentiation
-- Key differentiators (capabilities alternatives lack)
-- How you solve it differently
-- Why that's better (benefits)
-- Why customers choose you over alternatives
-
-### 7. Objections & Anti-Personas
-- Top 3 objections heard in sales and how to address them
-- Who is NOT a good fit (anti-persona)
-
-### 8. Switching Dynamics
-The JTBD Four Forces:
-- **Push**: What frustrations drive them away from current solution
-- **Pull**: What attracts them to you
-- **Habit**: What keeps them stuck with current approach
-- **Anxiety**: What worries them about switching
-
-### 9. Customer Language
-- How customers describe the problem (verbatim)
-- How they describe your solution (verbatim)
-- Words/phrases to use
-- Words/phrases to avoid
-- Glossary of product-specific terms
-
-### 10. Brand Voice
-- Tone (professional, casual, playful, etc.)
-- Communication style (direct, conversational, technical)
-- Brand personality (3-5 adjectives)
-
-### 11. Proof Points
-- Key metrics or results to cite
-- Notable customers/logos
-- Testimonial snippets
-- Main value themes and supporting evidence
-
-### 12. Goals
-- Primary business goal
-- Key conversion action (what you want people to do)
-- Current metrics (if known)
+Dorong penggunaan bahasa klien secara harfiah — frasa yang tepat (misal: "cari rumah dekat UGM", "takut sengketa tanah") lebih berharga daripada deskripsi kaku karena mencerminkan bagaimana pembeli properti di Jogja benar-benar berpikir.
 
 ---
 
-## Step 3: Create the Document
+## Bagian yang Perlu Dicatat
 
-After gathering information, create `.agents/product-marketing.md` with this structure:
+### 1. Ikhtisar Layanan Agen
+
+* Deskripsi satu baris (Fokus Anda sebagai agen)
+* Layanan utama yang diberikan (Jual beli, sewa, urus KPR, legalitas)
+* Fokus Area/Kawasan di Jogja (misal: Sleman Utara, Bantul, ringroad, dll.)
+* Spesialisasi Properti (Tanah kavling, kos-kosan mahasiswa, rumah subsidi, ruko)
+* Model layanan (Komisi standar, *co-broking*, dll.)
+
+### 2. Target Klien (Pembeli/Penyewa/Investor)
+
+* Jenis klien (Keluarga muda, investor luar kota, mahasiswa, pensiunan)
+* Pengambil keputusan utama (Suami/Istri, Orang tua yang membelikan anak)
+* Tujuan utama pembelian (*End-user*/ditinggali, *passive income*/disewakan, *capital gain*)
+* Pekerjaan yang harus diselesaikan / *Jobs to be done* (2-3 alasan utama mereka butuh agen)
+* Skenario spesifik (misal: "Beli rumah pertama dengan KPR," "Cari tanah untuk dibangun kos")
+
+### 3. Persona Klien
+
+Jika ada beberapa pihak yang terlibat (terutama untuk investor atau keluarga), catat untuk masing-masing:
+
+* Calon Penghuni (Anak/Mahasiswa), Pendana (Orang tua/Investor), Pengambil Keputusan
+* Apa yang dipedulikan masing-masing (misal: mahasiswa peduli jarak ke kampus, orang tua peduli keamanan & legalitas)
+
+### 4. Masalah & Titik Ketidaknyamanan
+
+* Tantangan inti pembeli sebelum memakai jasa Anda (bingung proses KPR, takut developer bodong)
+* Mengapa mencari sendiri sering gagal (tidak paham harga pasar lokal Jogja, terjebak status tanah seperti *Sultan Ground* yang tidak bisa SHM)
+* Kerugian yang dialami (waktu habis untuk survei zonk, DP hilang)
+* Ketegangan emosional (takut tertipu, stres mengurus birokrasi)
+
+### 5. Lanskap Kompetitif
+
+* **Kompetitor langsung**: Agen properti lain di area yang sama
+* **Kompetitor sekunder**: Developer yang menjual langsung (*in-house*)
+* **Kompetitor tidak langsung**: Pembeli mencoba mencari dan mengurus transaksi sendiri tanpa perantara
+* Bagaimana masing-masing memiliki kekurangan bagi klien (misal: beli sendiri berisiko salah legalitas)
+
+### 6. Diferensiasi
+
+* Pembeda utama (misal: punya relasi erat dengan notaris lokal dan bank untuk ACC KPR lebih cepat)
+* Bagaimana Anda melayani secara berbeda (survei dijemput, konsultasi hukum gratis)
+* Mengapa itu lebih baik bagi pembeli
+* Mengapa klien memilih Anda dibandingkan agen lain
+
+### 7. Keberatan & Anti-Persona
+
+* 3 keberatan teratas yang sering didengar (misal: "Fee agen bikin harga mahal", "Lokasi kurang masuk") dan cara mengatasinya
+* Siapa yang TIDAK cocok dilayani (anti-persona, misal: *flipper* yang mencari harga sangat miring/tidak realistis)
+
+### 8. Dinamika Keputusan Pembelian
+
+Empat Kekuatan *Jobs To Be Done* (JTBD):
+
+* **Dorongan (*Push*)**: Apa yang membuat mereka butuh properti sekarang (anak masuk kuliah di Jogja, kontrak rumah habis)
+* **Tarikan (*Pull*)**: Apa yang menarik mereka pada listing/layanan Anda (konten review rumah yang detail, ulasan positif)
+* **Kebiasaan (*Habit*)**: Apa yang menunda mereka (menunggu tabungan cukup, masih nyaman sewa)
+* **Kecemasan (*Anxiety*)**: Kekhawatiran saat mau bayar tanda jadi/DP (takut KPR ditolak, takut sertifikat bermasalah)
+
+### 9. Bahasa Klien
+
+* Bagaimana klien mendeskripsikan kebutuhan (harfiah, misal: "Cari yang dekat fasum", "Bebas banjir")
+* Kata/frasa yang harus digunakan
+* Kata/frasa yang harus dihindari (misal: istilah hukum properti yang terlalu rumit tanpa penjelasan)
+* Glosarium istilah properti lokal/umum (SHM, SHGB, KPR, IMB/PBG, *Sultan Ground*, *Paku Alam Ground*)
+
+### 10. Suara Personal Branding
+
+* Nada (Ramah, tepercaya, solutif, profesional tapi santai)
+* Gaya komunikasi (Bahasa Indonesia sehari-hari, campuran sedikit bahasa Jawa halus agar akrab, edukatif)
+* Kepribadian agen (3-5 kata sifat, misal: transparan, gesit, sabar)
+
+### 11. Poin Pembuktian
+
+* Metrik (Jumlah properti *sold* tahun ini, rekor KPR disetujui)
+* Klien/Area sukses (Bukti *closing* di perumahan ternama atau area favorit)
+* Cuplikan testimoni (Foto serah terima kunci/sertifikat)
+* Tema nilai utama dan bukti pendukung
+
+### 12. Tujuan Pemasaran
+
+* Tujuan bisnis utama (Mendapatkan *leads* valid untuk survei lokasi)
+* Tindakan konversi (Klik tautan WhatsApp, jadwalkan *viewing*)
+* Target saat ini (misal: 10 *viewing* per minggu, 2 *closing* per bulan)
+
+---
+
+## Langkah 3: Buat Dokumen
+
+Setelah mengumpulkan informasi, buat `.agents/property-marketing.md` dengan struktur ini:
 
 ```markdown
-# Product Marketing Context
+# Konteks Pemasaran Properti
 
-**Document version:** v1
-**Last updated:** [date]
+**Versi dokumen:** v1
+**Terakhir diperbarui:** [tanggal]
 
-## Product Overview
-**One-liner:**
-**What it does:**
-**Product category:**
-**Product type:**
-**Business model:**
+## Ikhtisar Layanan Agen
+**Satu baris:**
+**Layanan utama:**
+**Fokus Area Jogja:**
+**Spesialisasi:**
+**Model layanan:**
 
-## Target Audience
-**Target companies:**
-**Decision-makers:**
-**Primary use case:**
-**Jobs to be done:**
+## Target Klien
+**Jenis klien:**
+**Pengambil keputusan:**
+**Tujuan pembelian:**
+**Pekerjaan yang harus diselesaikan:**
 -
-**Use cases:**
+**Skenario spesifik:**
 -
 
-## Personas
-| Persona | Cares about | Challenge | Value we promise |
-|---------|-------------|-----------|------------------|
+## Persona Klien
+| Persona | Peduli tentang | Tantangan | Solusi dari Agen |
+|---------|----------------|-----------|------------------|
 | | | | |
 
-## Problems & Pain Points
-**Core problem:**
-**Why alternatives fall short:**
+## Masalah & Titik Ketidaknyamanan
+**Masalah inti pembeli:**
+**Mengapa jalan sendiri/alternatif gagal:**
 -
-**What it costs them:**
-**Emotional tension:**
+**Kerugian yang dialami:**
+**Ketegangan emosional:**
 
-## Competitive Landscape
-**Direct:** [Competitor] — falls short because...
-**Secondary:** [Approach] — falls short because...
-**Indirect:** [Alternative] — falls short because...
+## Lanskap Kompetitif
+**Langsung:** [Agen lain] — kelemahannya...
+**Sekunder:** [Beli langsung ke developer] — kelemahannya...
+**Tidak langsung:** [Cari sendiri] — kelemahannya...
 
-## Differentiation
-**Key differentiators:**
+## Diferensiasi
+**Pembeda utama:**
 -
-**How we do it differently:**
-**Why that's better:**
-**Why customers choose us:**
+**Layanan unggulan:**
+**Mengapa lebih baik:**
+**Mengapa memilih saya:**
 
-## Objections
-| Objection | Response |
-|-----------|----------|
+## Keberatan
+| Keberatan | Respons |
+|-----------|---------|
 | | |
 
 **Anti-persona:**
 
-## Switching Dynamics
-**Push:**
-**Pull:**
-**Habit:**
-**Anxiety:**
+## Dinamika Keputusan Pembelian
+**Dorongan (Push):**
+**Tarikan (Pull):**
+**Kebiasaan (Habit):**
+**Kecemasan (Anxiety):**
 
-## Customer Language
-**How they describe the problem:**
-- "[verbatim]"
-**How they describe us:**
-- "[verbatim]"
-**Words to use:**
-**Words to avoid:**
-**Glossary:**
-| Term | Meaning |
-|------|---------|
+## Bahasa Klien
+**Deskripsi kebutuhan (harfiah):**
+- "[harfiah]"
+**Kata yang digunakan:**
+**Kata yang dihindari:**
+**Glosarium Properti:**
+| Istilah | Makna |
+|---------|-------|
 | | |
 
-## Brand Voice
-**Tone:**
-**Style:**
-**Personality:**
+## Suara Personal Branding
+**Nada:**
+**Gaya Komunikasi:**
+**Kepribadian:**
 
-## Proof Points
-**Metrics:**
-**Customers:**
-**Testimonials:**
-> "[quote]" — [who]
-**Value themes:**
-| Theme | Proof |
-|-------|-------|
+## Poin Pembuktian
+**Metrik Closing:**
+**Bukti Area:**
+**Testimoni:**
+> "[kutipan]" — [siapa]
+**Tema nilai:**
+| Tema | Bukti |
+|------|-------|
 | | |
 
-## Goals
-**Business goal:**
-**Conversion action:**
-**Current metrics:**
+## Tujuan Pemasaran
+**Tujuan bisnis:**
+**Tindakan konversi (Call to Action):**
+**Target mingguan/bulanan:**
 
-## Changelog
-*Newest first. One line per revision: what changed and why.*
-- v1 ([date]) — Initial context.
-```
+## Catatan Perubahan
+*Terbaru di atas. Satu baris per revisi: apa yang berubah dan alasannya.*
+- v1 ([tanggal]) — Konteks awal pemasaran properti.
 
 ---
 
-## Step 4: Confirm, Version, and Save
+## Langkah 4: Konfirmasi, Versi, dan Simpan
 
-- Show the completed document
-- Ask if anything needs adjustment
-- **Set the version and changelog** — this is the paper trail for a doc every other skill reads:
-  - **New document:** set `Document version: v1` and a single Changelog entry — `- v1 ([today]) — Initial context.`
-  - **Updating an existing document:** increment the version (v2 → v3 …), update `Last updated` to today, and **prepend a new Changelog entry** at the top of the list (newest first) summarizing *what changed and why* in one line. Never rewrite or reorder past entries.
-  - A good entry names the sections touched and the reason, not "updated the doc." Examples:
-    - `- v3 (2026-07-16) — Repositioned from "email tool" to "deliverability platform"; added RevOps to the ICP.`
-    - `- v2 (2026-06-02) — Rewrote value prop and objections after 5 customer interviews; added competitor Acme.`
-  - Use today's date in ISO form (YYYY-MM-DD) for the entry and `Last updated`.
-  - **Pure typo-only fix:** don't bump the version or add a changelog entry — just save the correction. Every other change bumps the version and gets an entry. When the change is a real repositioning, say so plainly — downstream skills will now generate against the new context.
-- Save to `.agents/product-marketing.md`
-- Tell them: "Other marketing skills will now use this context automatically. The Changelog at the bottom tracks every revision — check it to see how your positioning has evolved. Run `/product-marketing` anytime to update it."
+* Tunjukkan dokumen yang telah selesai.
+* Tanyakan apakah ada yang perlu disesuaikan.
+* **Tetapkan versi dan catatan perubahan** — ini adalah rekam jejak untuk dokumen yang dibaca oleh setiap keahlian pemasaran lainnya (seperti pembuat caption IG atau skrip video *room tour*).
+* **Dokumen baru:** tetapkan `Versi dokumen: v1` dan entri Catatan Perubahan tunggal — `- v1 ([hari ini]) — Konteks awal pemasaran properti.`
+* **Memperbarui dokumen yang ada:** naikkan versi (v2 → v3 ...), perbarui `Terakhir diperbarui` menjadi hari ini, dan **tambahkan entri Catatan Perubahan baru di awal daftar** (terbaru di atas) yang merangkum *apa yang berubah dan alasannya* dalam satu baris. Jangan pernah menulis ulang atau mengatur ulang entri sebelumnya.
+* Contohnya: `- v3 (2026-07-26) — Mengubah fokus target dari pembeli rumah pertama menjadi investor kos mahasiswa area Sleman.`
+* Gunakan tanggal hari ini dalam format ISO (YYYY-MM-DD) untuk entri dan `Terakhir diperbarui`.
+* Simpan ke `.agents/property-marketing.md`.
+* Beri tahu mereka: "Keahlian pembuatan konten properti (seperti skrip Tiktok, deskripsi Rumah123, atau brosur) sekarang akan menggunakan konteks ini secara otomatis. Jalankan `/pemasaran-properti` kapan saja untuk memperbaruinya."
 
 ---
 
-## Tips
+## Kiat
 
-- **Be specific**: Ask "What's the #1 frustration that brings them to you?" not "What problem do they solve?"
-- **Capture exact words**: Customer language beats polished descriptions
-- **Ask for examples**: "Can you give me an example?" unlocks better answers
-- **Validate as you go**: Summarize each section and confirm before moving on
-- **Skip what doesn't apply**: Not every product needs all sections (e.g., Personas for B2C)
+* **Spesifik**: Tanyakan "Apa ketakutan terbesar klien Jogja soal legalitas tanah?" bukan "Apa masalah mereka?".
+* **Eksplorasi Lokalitas**: Pastikan untuk memasukkan nuansa Jogja jika relevan (misal: jarak ke UGM/UPN, Ringroad, status tanah, dll).
+* **Validasi sambil jalan**: Rangkum setiap bagian dan konfirmasi sebelum melanjutkan.
