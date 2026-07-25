@@ -63,10 +63,10 @@ Dorong penggunaan bahasa klien secara harfiah — frasa yang tepat (misal: "cari
 * Deskripsi satu baris (Fokus Anda sebagai agen)
 * Layanan utama yang diberikan (Jual beli, sewa, urus KPR, legalitas)
 * Fokus Area/Kawasan di Jogja (misal: Sleman Utara, Bantul, ringroad, dll.)
-* Spesialisasi Properti (Tanah kavling, kos-kosan mahasiswa, rumah subsidi, ruko)
+* Spesialisasi Properti (Tanah, kos-kosan, rumah, ruko, gudang, apartemen )
 * Model layanan (Komisi standar, *co-broking*, dll.)
 
-### 2. Target Klien (Pembeli/Penyewa/Investor)
+### 2. Target Klien (Pembeli/Penyewa/Investor/Owner Yang Mau Titip Jual/Sewa Propertnya)
 
 * Jenis klien (Keluarga muda, investor luar kota, mahasiswa, pensiunan)
 * Pengambil keputusan utama (Suami/Istri, Orang tua yang membelikan anak)
@@ -98,7 +98,7 @@ Jika ada beberapa pihak yang terlibat (terutama untuk investor atau keluarga), c
 ### 6. Diferensiasi
 
 * Pembeda utama (misal: punya relasi erat dengan notaris lokal dan bank untuk ACC KPR lebih cepat)
-* Bagaimana Anda melayani secara berbeda (survei dijemput, konsultasi hukum gratis)
+* Bagaimana Anda melayani secara berbeda (Memastikan proses jual beli/sewa berjalan dengan benar, konsultasi hukum gratis)
 * Mengapa itu lebih baik bagi pembeli
 * Mengapa klien memilih Anda dibandingkan agen lain
 
